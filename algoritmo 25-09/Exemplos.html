@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demonstração"></p>
+
+    <script>
+        /*
+        Array
+        const cars=["Saab", "Volvo", "BMW"];
+        window.alert(cars)
+        */
+        /*
+        const fruits=["Banana", "Laranja", "Maça", "Manga"];
+        let fruta = fruits.at();
+       document.getElementById("demonstração").innerHTML  = fruta;
+        */
+        /*
+         const fruits=["Banana", "Orange", "Apple", "Mango"];
+         let fruit = fruits.at(-2);
+        document.getElementById("demonstração").innerHTML  = fruit;
+        */
+    </script>
+
+    <h1> Matrizes JavaScript</h1>
+    <h2> O método concat()</h2>
+
+    <p> O método concat() concatena (une) duas ou mais matrizes: </p>
+    <p id="demonstração"></p>
+
+    <script>
+        /* const arr1 =["Cecilie", "Yasmim"];
+         const arr2 =["Guilherme", "Henrico"];
+     
+         const filhos = arr1.concat(arr2)
+          document.getElementById("demonstração").innerHTML  = filhos;
+          */
+    </script>
+
+    //exemplo
+
+    <h1> Matrizes JavaScript</h1>
+    <h2> O método at ()</h2>
+
+    <p> O método at() retorna um elemento indexado de uma matriz.</p>
+    <p id="demonstração"></p>
+
+    <script>
+        /*
+      const frutas=["Banana", "Laranja", "Maça", "Manga"];
+      let fruta = frutas.at(3);
+     
+      document.getElementById("demonstração").innerHTML  = fruta;
+      */
+    </script>
+
+    //exemplo
+
+    <h1> Matrizes JavaScript</h1>
+    <h2> Notação de colchetes</h2>
+
+    <p> A notação entre colchetes [] retorna um elemento indexado de uma matriz.</p>
+    <p id="demonstração"></p>
+    <script>
+        /*
+        const frutas=["Banana", "Laranja", "Maça", "Manga"];
+     let fruta = frutas[3];
+    
+     document.getElementById("demonstração").innerHTML  = fruta;
+     */
+    </script>
+
+    //exemplo
+
+    <h1> Matrizes JavaScript</h1>
+    <h2> O método copyWithin() </h2>
+
+    <p> copyWithin() copia elementos do array para outra posição em um array, sobreescrevendo valores existentes </p>
+    <p> Copie os dois primeiros elementos da matriz para a terceira e quarta posição:</p>
+
+    <p id="demonstração"></p>
+    <script>
+        /*
+    const frutas=["Banana", "Laranja", "Maça", "Mango","Mamão", "Kiwi", "Pequi" ];
+         
+        document.getElementById("demonstração").innerHTML  =  frutas.copyWithin(2,0,2);
+       */
+    </script>
+    <p> O método copyWithin() não é suportado no internet Explorer</p>
+
+    //exemplo
+
+    <h1>JavaScript Arrays</h1>
+    <h2> The entries() Method</h2>
+
+    <p>O método entries() retorna um iterador com os pares chave/valor de uma matriz: </p>
+
+    <p id="demonstração"></p>
+    <script>
+        const frutas = ["Banana", "Laranja", "Maça", "Manga"];
+        const list = frutas.entries();
+
+        let text = "";
+        for (let x of list) {
+            text += x + "<br>";
+        }
+        document.getElementById("demonstração").innerHTML = text;
+    </script>
+    //exemplo
+
+    <h1>Matrizes JavaScript </h1>
+    <h2> O método every()</h2>
+
+    <p>O método every() retorna verdadeiro se cada elemento em um array passar em um teste de função. </p>
+
+    <p id="demonstração"></p>
+    <script>
+        /*
+        const idades = [32, 33, 65, 40];
+
+        function checkAge(idade) {
+            return idade > 18;
+        }
+
+        document.getElementById("demonstração").innerHTML = "Todos os elementos têm mais de 18 anos?" + idades.every(checkAge);
+          */
+</script>
+
+<h1>JavaScript Arrays </h1>
+<h2> O fill() Metódo</h2>
+
+<p> Fill() specified elements in an array with a value. </p>
+
+<p>Fill the last two array elements with "kiwi":</p>
+
+<p id="demonstração"></p>
+<script>
+    /*
+const frutas = ["Banana", "Laranja", "Maça", "Manga"];
+function checkAge(idade){
+return idade > 18;
+}
+
+document.getElementById("demonstração").innerHTML = frutas.fill("kiwi",2,4);
+*/ 
+</script>
+
+
+
+</body >
+
+</html >
