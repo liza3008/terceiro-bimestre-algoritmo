@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>LER 10 NUMEROS E VERIFICAR QUAL E O MENOR UTILIZADO, USANDO O ARRAY</h2>
+
+    <form>
+        <label> Digite um numero:</label><br>
+        <input type="number" id="recebedora"> <br>
+        <button type="button" id="Armazenar">Armazenar</button>
+        <button type="button" onclick="encontrarmenor">Encontrar menor numero</button>
+    </form>
+
+    <p id="resultado"></p>
+    <script>
+        let numeros = [];
+
+        document.getElementById("Armazenar").onclick = function () {
+
+            let recebedora = parseFloat(document.getElementById("recebedora").value);
+            if (!isNaN(recebedora)) {
+                numeros.push(recebedora);
+                document.getElementById("recebedora").value = "";
+            }
+        }
+        function encontrarmenor() {
+            if(numeros.length>0){
+                let menorNumero=math.min(...numeros)
+        document.getElementById("resultado").innerText = "Os numeros digitados foram:" + numeros.join(", ") + "\n o menor numero digitado foi:" + menorNumero;
+
+            } else {
+            document.getElementById("resultado").innerText = "Nenhum numero foi armazenado"
+        }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
